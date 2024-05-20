@@ -6,7 +6,7 @@ public class RPSFrame implements Runnable {
     public RPSFrame() {
         JFrame frame = new JFrame("Rock Paper Scissors");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 400); // 540 height of image + 40 for window menu bar
+        frame.setSize(400, 300); // 540 height of image + 40 for window menu bar
         frame.setLocationRelativeTo(null); // auto-centers frame in screen
 
         // create and add panel

@@ -27,9 +27,9 @@ public class MenuPanel extends JPanel implements ActionListener{
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.setFont(new Font("Times New Roman", Font.BOLD, 30));
+        g.setFont(new Font("Comic Sans", Font.ITALIC, 30));
         g.setColor(Color.PINK);
-        g.drawString("Pick a game to play!", 70, 75);
+        g.drawString("*pick a game to play!*", 50, 75);
         RPSButton.setLocation(50, 120);
         WhackButton.setLocation(225, 120);
     }
@@ -40,7 +40,7 @@ public class MenuPanel extends JPanel implements ActionListener{
         if(e.getSource() instanceof JButton) {
             JButton button = (JButton) e.getSource();
             if (button == RPSButton) {
-                new RPSFrame();
+                new RPSFrame(frame);
                 frame.setVisible(false);
             } else {
                 new WhackFrame();
