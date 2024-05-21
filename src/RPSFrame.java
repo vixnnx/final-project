@@ -10,7 +10,7 @@ public class RPSFrame implements Runnable {
         frame.setLocationRelativeTo(null); // auto-centers frame in screen
 
         // create and add panel
-        panel = new RPSPanel();
+        panel = new RPSPanel(frame);
         frame.add(panel);
 
         // display the frame

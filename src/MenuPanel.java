@@ -40,7 +40,7 @@ public class MenuPanel extends JPanel implements ActionListener{
         if(e.getSource() instanceof JButton) {
             JButton button = (JButton) e.getSource();
             if (button == RPSButton) {
-                new RPSFrame(frame);
+                new RPSFrame();
                 frame.setVisible(false);
             } else {
                 new WhackFrame();

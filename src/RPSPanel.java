@@ -20,10 +20,12 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
     private int count;
     private int score;
     private JButton menu;
+    private JFrame frame;
 
 
 
-    public RPSPanel() {
+    public RPSPanel(JFrame f) {
+        frame = f;
         count = 0;
         random = 3;
         score = 0;
@@ -31,21 +33,21 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
         add(menu);
         menu.addActionListener(this);
         try {
-            background = ImageIO.read(new File("src/RPSbackground.png"));
+            background = ImageIO.read(new File("src/assets/RPSbackground.png"));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
         try {
-            pc = new BufferedImage[] {ImageIO.read(new File("src/rock.png")),
-                    ImageIO.read(new File("src/paper.png")),
-                    ImageIO.read(new File("src/scissors.png")),
-                    ImageIO.read(new File("src/4.png"))};
+            pc = new BufferedImage[] {ImageIO.read(new File("src/assets/rock.png")),
+                    ImageIO.read(new File("src/assets/paper.png")),
+                    ImageIO.read(new File("src/assets/scissors.png")),
+                    ImageIO.read(new File("src/assets/4.png"))};
         } catch  (IOException e) {
             System.out.println(e.getMessage());
         }
-        rock = new Item("src/rock.png", 40, 175);
-        paper = new Item("src/paper.png", 180, 175);
-        scissors = new Item("src/scissors.png",300, 175);
+        rock = new Item("src/assets/rock.png", 40, 175);
+        paper = new Item("src/assets/paper.png", 180, 175);
+        scissors = new Item("src/assets/scissors.png",300, 175);
 
         addMouseListener(this);
         setFocusable(true);
@@ -61,12 +63,13 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
         g.drawImage(rock.getImg(), 40, 175, null);
         g.drawImage(paper.getImg(), 180, 175, null);
         g.drawImage(scissors.getImg(), 300, 175, null);
-        g.drawImage(pc[random], 170, 20, null);
+
         g.setColor(Color.BLACK);
         g.setFont(new Font("Arial", Font.PLAIN, 20));
-        g.drawString("Score: " + score, 7, 17);
-        g.setColor(Color.BLUE);
-        g.setFont(new Font("Courier New", Font.BOLD, 24));
+        g.drawString("Score: " + score, 7, 20);
+        g.setColor(Color.BLACK);
+        g.setFont(new Font("Georgia", Font.BOLD, 24));
+        menu.setLocation(7, 27);
         if (count != 0) {
             if (won) {
                 g.drawString("You Won :D", 100, 120);
@@ -78,27 +81,35 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
         } else {
             g.drawString("Click an image to play!", 50, 120);
         }
+        g.drawImage(pc[random], 170, 20, null);
     }
 
 
 //how to go back to menu
-  /*  public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {
         if (e.getSource() instanceof JButton) {
             JButton button = (JButton) e.getSource();
             if (button == menu) {
-                new MainFrame();
-                frame.setVisible(false);
+            new MenuFrame();
+            frame.setVisible(false);
             }
         }
     }
-*/
+
+
 
     public void mouseClicked(MouseEvent e) {
 
     }
 
     public void mousePressed(MouseEvent e) {
-
+        Point mouse;
+        if (e.getButton() == MouseEvent.BUTTON1) {
+            mouse = e.getPoint();
+            if (rock.rect().contains(mouse) || paper.rect().contains(mouse) ||scissors.rect().contains(mouse)) {
+                random = (int) (Math.random() * 3);
+            }
+        }
     }
 
     public void mouseReleased(MouseEvent e) {
@@ -118,7 +129,6 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
                     won = true;
                     tie = false;
                 }
-                random = (int) (Math.random() * 3);
             } else if (paper.rect().contains(mouse)) {
                 if (random == 0) { // rock
                     score++;
@@ -131,7 +141,6 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
                     won = false;
                     tie = false;
                 }
-                random = (int) (Math.random() * 3);
             } else if (scissors.rect().contains(mouse)) {// scissors
                 if (random == 0) {
                     won = false;
@@ -144,7 +153,6 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
                     won = false;
                     tie = true;
                 }
-                random = (int) (Math.random() * 3);
             }
         }
     }
@@ -156,4 +164,5 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
     public void mouseExited(MouseEvent e) {
 
     }
+
 }
