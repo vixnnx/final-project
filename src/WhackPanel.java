@@ -20,10 +20,12 @@ public class WhackPanel extends JPanel implements MouseListener, ActionListener 
     private static int score;
     private JButton menu;
     private JFrame frame;
+    private int[][] location; // each array is the x,y of one hole
 
 
 
     public WhackPanel (JFrame f) {
+        location = new int[][]{{77, 5}, {67, 105}, {137,205}, {195,45}, {220, 128}, {337, 27}, {373, 90}, {353,179}};
         frame = f;
         score = 0;
         menu = new JButton("Menu");
@@ -48,8 +50,9 @@ public class WhackPanel extends JPanel implements MouseListener, ActionListener 
         super.paintComponent(g);
         g.drawImage(background, 0, 0, null);
         g.setColor(Color.BLACK);
-        try {
-            g.drawImage(ImageIO.read(new File("src/assets/mole.png")), 50, 50, null);
+        try {                                                                        // random [0]
+            g.drawImage(ImageIO.read(new File("src/assets/mole.png")),
+                    location[7][0], location[7][1], null);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
