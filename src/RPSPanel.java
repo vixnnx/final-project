@@ -66,8 +66,8 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
         g.setColor(Color.BLACK);
         g.setFont(new Font("Arial", Font.PLAIN, 20));
         g.drawString("Score: " + score, 7, 20);
-        g.setColor(Color.BLACK);
-        g.setFont(new Font("Georgia", Font.BOLD, 24));
+        g.setColor(Color.DARK_GRAY);
+        g.setFont(new Font("Garamond", Font.BOLD, 24));
         menu.setLocation(7, 27);
         if (count != 0) {
             if (won) {

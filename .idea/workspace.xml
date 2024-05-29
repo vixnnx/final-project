@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647ddb03-2965-4ff3-b799-1b983935c030" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/roadtrip.png" afterDir="false" />
+    <list default="true" id="647ddb03-2965-4ff3-b799-1b983935c030" name="Changes" comment="finished project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RPSPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPSPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WhackPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhackPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Wood Block2.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,18 @@
       <option name="presentableId" value="Default" />
       <updated>1715955078619</updated>
     </task>
+    <task id="LOCAL-00001" summary="finished project">
+      <created>1716991998206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716991998206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished project" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished project" />
   </component>
 </project>

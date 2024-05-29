@@ -56,7 +56,6 @@ public class WhackPanel extends JPanel implements MouseListener, ActionListener 
         g.setFont(new Font("Arial", Font.PLAIN, 20));
         g.drawString("Score: " + score, 7, 20);
         g.setColor(Color.BLACK);
-        g.setFont(new Font("Georgia", Font.BOLD, 24));
         menu.setLocation(7, 27);
 
     }
