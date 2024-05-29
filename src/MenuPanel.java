@@ -27,11 +27,17 @@ public class MenuPanel extends JPanel implements ActionListener{
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.setFont(new Font("Comic Sans", Font.ITALIC, 30));
-        g.setColor(Color.PINK);
-        g.drawString("*pick a game to play!*", 50, 75);
-        RPSButton.setLocation(50, 120);
-        WhackButton.setLocation(225, 120);
+        try {
+           g.drawImage(ImageIO.read(new File("src/assets/roadtrip.png")), 0, -16, null);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        g.setFont(new Font("Georgia", Font.BOLD, 30));
+        g.setColor(Color.BLUE);
+        g.drawString("Road Trip Hub", 75, 80);
+
+        RPSButton.setLocation(20, 120);
+        WhackButton.setLocation(240, 120);
     }
 
 

@@ -18,7 +18,7 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
     private boolean won;
     private boolean tie;
     private int count;
-    private int score;
+    private static int score;
     private JButton menu;
     private JFrame frame;
 
@@ -28,7 +28,6 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
         frame = f;
         count = 0;
         random = 3;
-        score = 0;
         menu = new JButton("Menu");
         add(menu);
         menu.addActionListener(this);

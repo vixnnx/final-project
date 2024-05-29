@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class WhackPanel extends JPanel implements MouseListener, ActionListener {
 
     private BufferedImage background;
-    private BufferedImage mole;
+    private Item mole;
     private int random; // which hole
     private static int score;
     private JButton menu;
@@ -27,7 +27,9 @@ public class WhackPanel extends JPanel implements MouseListener, ActionListener 
     public WhackPanel (JFrame f) {
         location = new int[][]{{77, 5}, {67, 105}, {137,205}, {195,45}, {220, 128}, {337, 27}, {373, 90}, {353,179}};
         frame = f;
-        score = 0;
+        mole = new Item ("src/assets/mole.png");
+        random = (int) (Math.random()*8);
+        mole.setXY(location[random]);
         menu = new JButton("Menu");
         add(menu);
         menu.addActionListener(this);
@@ -50,12 +52,7 @@ public class WhackPanel extends JPanel implements MouseListener, ActionListener 
         super.paintComponent(g);
         g.drawImage(background, 0, 0, null);
         g.setColor(Color.BLACK);
-        try {                                                                        // random [0]
-            g.drawImage(ImageIO.read(new File("src/assets/mole.png")),
-                    location[7][0], location[7][1], null);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        g.drawImage(mole.getImg(), location[random][0], location[random][1], null);
         g.setFont(new Font("Arial", Font.PLAIN, 20));
         g.drawString("Score: " + score, 7, 20);
         g.setColor(Color.BLACK);
@@ -86,12 +83,23 @@ public class WhackPanel extends JPanel implements MouseListener, ActionListener 
     }
 
     public void mousePressed(MouseEvent e) {
-
+        Point mouse;
+        if (e.getButton() == MouseEvent.BUTTON1) {
+            mouse = e.getPoint();
+            if (mole.rect().contains(mouse)) {
+                random = (int) (Math.random() * 8);
+            }
+        }
     }
 
     public void mouseReleased(MouseEvent e) {
         Point mouse;
         if (e.getButton() == MouseEvent.BUTTON1) {  // left mouse click
+            mouse = e.getPoint();
+            if (mole.rect().contains(mouse)) {
+                score++;
+                mole.setXY(location[random]);
+            }
         }
     }
 

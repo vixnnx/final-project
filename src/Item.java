@@ -23,6 +23,15 @@ public class Item {
 
     }
 
+    public Item(String i) {
+        try {
+            img = ImageIO.read(new File(i));
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
 
     public BufferedImage getImg() {
         return img;
@@ -34,6 +43,13 @@ public class Item {
         int imageWidth = img.getWidth();
         Rectangle rect = new Rectangle((int) x, (int) y, imageWidth, imageHeight);
         return rect;
+    }
+
+
+
+    public void setXY(int[] a) {
+        x = a[0];
+        y = a[1];
     }
 
 }

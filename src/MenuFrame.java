@@ -4,7 +4,7 @@ public class MenuFrame {
     private JFrame frame;
 
     public MenuFrame() {
-        frame = new JFrame("Menu");
+        frame = new JFrame("Road Trip Hub");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 250);
         frame.setLocationRelativeTo(null); // auto-centers frame in screen
