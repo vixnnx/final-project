@@ -12,6 +12,7 @@ import static java.awt.AWTEventMulticaster.add;
 public class MenuPanel extends JPanel implements ActionListener{
     private JButton RPSButton;
     private JButton WhackButton;
+    private JButton ISpyButton;
     private JFrame frame;
 
 
@@ -19,10 +20,13 @@ public class MenuPanel extends JPanel implements ActionListener{
         this.frame = frame;
         RPSButton = new JButton("Rock Paper Scissors");
         WhackButton = new JButton("Whack a Mole");
+        ISpyButton = new JButton("ISPY");
         add(RPSButton);
         add(WhackButton);
+        add(ISpyButton);
         RPSButton.addActionListener(this);
         WhackButton.addActionListener(this);
+        ISpyButton.addActionListener(this);
     }
 
     public void paintComponent(Graphics g) {
@@ -36,8 +40,9 @@ public class MenuPanel extends JPanel implements ActionListener{
         g.setColor(Color.BLUE);
         g.drawString("Road Trip Hub", 75, 80);
 
-        RPSButton.setLocation(20, 120);
-        WhackButton.setLocation(240, 120);
+        RPSButton.setLocation(10, 160);
+        WhackButton.setLocation(260, 160);
+        ISpyButton.setLocation(180, 160);
     }
 
 
@@ -48,8 +53,11 @@ public class MenuPanel extends JPanel implements ActionListener{
             if (button == RPSButton) {
                 new RPSFrame();
                 frame.setVisible(false);
-            } else {
+            } else if (button == WhackButton) {
                 new WhackFrame();
+                frame.setVisible(false);
+            } else if (button == ISpyButton) {
+                new ISpyFrame();
                 frame.setVisible(false);
             }
         }

@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="647ddb03-2965-4ff3-b799-1b983935c030" name="Changes" comment="finished project">
+      <change afterPath="$PROJECT_DIR$/src/ISpyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ISpyPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/bluecar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/crane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/dogcar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fastfood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/firetruck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/ispy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/semi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/surfboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/train.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RPSPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPSPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WhackPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhackPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Wood Block2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
