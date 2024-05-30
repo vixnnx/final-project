@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647ddb03-2965-4ff3-b799-1b983935c030" name="Changes" comment="finished project">
-      <change afterPath="$PROJECT_DIR$/src/ISpyFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ISpyPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/bluecar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/crane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/dogcar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fastfood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/firetruck.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/ispy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/semi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/surfboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/train.png" afterDir="false" />
+    <list default="true" id="647ddb03-2965-4ff3-b799-1b983935c030" name="Changes" comment="added ISPY">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ISpyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ISpyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RPSPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPSPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/bluecar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/bluecar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/cat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/cat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/crane.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/crane.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/dogcar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/dogcar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fastfood.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/fastfood.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/firetruck.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/firetruck.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/flag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/semi.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/semi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/surfboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/surfboard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/trafficcone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/trafficcone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/train.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/train.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/truck.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/ispy/truck.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,7 @@
       <recent name="C:\Users\BT_1N3_10\IdeaProjects\final project\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BT_1N3_10\IdeaProjects\final-project\src\assets\ispy" />
       <recent name="C:\Users\BT_1N3_10\IdeaProjects\final-project\src\assets" />
       <recent name="C:\Users\BT_1N3_10\IdeaProjects\final-project\src" />
       <recent name="C:\Users\BT_1N3_10\IdeaProjects\final project\src" />
@@ -80,11 +83,19 @@
       <option name="project" value="LOCAL" />
       <updated>1716991998206</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added ISPY">
+      <created>1717079696590</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717079696590</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished project" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished project" />
+    <MESSAGE value="added ISPY" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ISPY" />
   </component>
 </project>

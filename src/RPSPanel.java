@@ -59,9 +59,9 @@ public class RPSPanel extends JPanel implements MouseListener, ActionListener {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(background, 0, 0, null);
-        g.drawImage(rock.getImg(), 40, 175, null);
-        g.drawImage(paper.getImg(), 180, 175, null);
-        g.drawImage(scissors.getImg(), 300, 175, null);
+        g.drawImage(rock.getImg(), rock.getX(), rock.getY(), null);
+        g.drawImage(paper.getImg(), paper.getX(), paper.getY(), null);
+        g.drawImage(scissors.getImg(), scissors.getX(), scissors.getY(), null);
 
         g.setColor(Color.BLACK);
         g.setFont(new Font("Arial", Font.PLAIN, 20));

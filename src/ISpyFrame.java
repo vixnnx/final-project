@@ -6,7 +6,7 @@ public class ISpyFrame implements Runnable {
     public ISpyFrame() {
         JFrame frame = new JFrame("ISPY");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(450, 300); // 540 height of image + 40 for window menu bar
+        frame.setSize(900, 640); // 540 height of image + 40 for window menu bar
         frame.setLocationRelativeTo(null); // auto-centers frame in screen
 
         // create and add panel

@@ -45,6 +45,12 @@ public class Item {
         return rect;
     }
 
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
 
 
     public void setXY(int[] a) {
