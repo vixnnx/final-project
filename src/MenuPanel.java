@@ -37,7 +37,7 @@ public class MenuPanel extends JPanel implements ActionListener{
             System.out.println(e.getMessage());
         }
         g.setFont(new Font("Georgia", Font.BOLD, 30));
-        g.setColor(Color.BLUE);
+        g.setColor(Color.gray);
         g.drawString("Road Trip Hub", 75, 80);
 
         RPSButton.setLocation(10, 160);

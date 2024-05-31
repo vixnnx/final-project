@@ -58,4 +58,13 @@ public class Item {
         y = a[1];
     }
 
+    public void setImg(String name) {
+        try {
+            img = ImageIO.read(new File(name));
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
 }
